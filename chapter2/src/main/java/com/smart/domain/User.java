@@ -6,7 +6,7 @@ public class User {
     private int userId;
     private String userName;
     private String password;
-    private String credits;
+    private int credits;
     private String lastIp;
     private Date lastVisit;
 
@@ -34,11 +34,11 @@ public class User {
         this.password = password;
     }
 
-    public String getCredits() {
+    public int getCredits() {
         return credits;
     }
 
-    public void setCredits(String credits) {
+    public void setCredits(int credits) {
         this.credits = credits;
     }
 
