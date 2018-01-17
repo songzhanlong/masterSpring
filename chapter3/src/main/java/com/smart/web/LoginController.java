@@ -31,7 +31,7 @@ public class LoginController {
             user.setLastIp(request.getLocalAddr());
             user.setLastVisit(new Date());
             userService.loginSuccess(user);
-            request.getSession().setAttribute("user", user);
+            request.setAttribute("user", user);
             return new ModelAndView("main");
         }
     }
